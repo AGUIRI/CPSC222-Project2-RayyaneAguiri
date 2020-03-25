@@ -15,7 +15,7 @@ body {
   height:40px;
   margin:5px 10px;
 }
-.form-control{
+.form-control-1{
   margin-top: 9px;
   margin-left:30px;
   border: 1px solid pink !important;
@@ -343,6 +343,9 @@ body {
   margin-left:20px;
   border:none;
   box-shadow: none !important;
+}
+.caption{
+  color: red; 
 }
 /*--------------Product-Description-------------*/
 .product-description h6{
