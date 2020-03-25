@@ -11,31 +11,74 @@
     <div class="menu">
             <a href="index.html"><img src="images/rayyan.png" class="logo"></a>
     </div>
-    <div class="contact-title">
-        <h1>CONTACT US</h1>
-        <h2>We would be happy to answer your questions!</h2>
-    </div>
-    <div class="contact-form">
-        <form id="contact-form" method="post" action="">
-            <input name=" first name" type="text" class="form-control" placeholder="First Name" required><br>
-            <input name=" last name" type="text" class="form-control" placeholder="Last Name" required><br>
-            <input name="Address" type="text" class="form-control" placeholder="Address" required><br>
-            <input name="City" type="text" class="form-control" placeholder="City" required><br>
-            <input name="State" type="text" class="form-control" placeholder="State" required><br>
-            <select name="State" id="pet-select">
-              <option value="dog">Dog</option>
-              <option value="cat">Cat</option>
-              <option value="hamster">Hamster</option>
-              <option value="parrot">Parrot</option>
-              <option value="spider">Spider</option>
-              <option value="goldfish">Goldfish</option>
-          </select>
-            <input name="Zip Code" type="number" class="form-control" placeholder="Zip Code" required><br>
-            <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
-            <input type="submit" class="form-control submit" value="SEND MESSAGE">
-        </form>
 
+    <div class="container">  
+      <form id="contact" action="" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset><input placeholder="Your First Name" type="text" tabindex="1" required autofocus></fieldset>
+        <fieldset><input placeholder="Your Last Name" type="text" tabindex="2" required ></fieldset>
+        <fieldset><input placeholder="Your Address" type="text" tabindex="3" required ></fieldset>
+        <fieldset><input placeholder="Your City"  type="text"tabindex="4" required></fieldset>
+        <fieldset>
+          <label for="State">State</label>
+            <select name="State" id="pet-select" form="contact" tabindex="5" required>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Arkansas">Arkansas</option>
+              <option value="California">California</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Connecticut">Connecticut</option>
+              <option value="Delaware">Delaware</option>
+              <option value="Florida">Florida</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Hawaii">Hawaii</option>
+              <option value="Idaho">Idaho</option>
+              <option value="Illinois">Illinois</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Iowa">Iowa</option>
+              <option value="Kansas">Kansas</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Louisiana">Louisiana</option>
+              <option value="Maine">Maine</option>
+              <option value="Maryland">Maryland</option>
+              <option value="Massachusetts">Massachusetts</option>
+              <option value="Michigan">Michigan</option>
+              <option value="Minnesota">Minnesota</option>
+              <option value="Mississippi">Mississippi</option>
+              <option value="Missouri">Missouri</option>
+              <option value="Montana">Montana</option>
+              <option value="Nebraska">Nebraska</option>
+              <option value="Nevada">Nevada</option>
+              <option value="New Hampshire">New Hampshire</option>
+              <option value="New Jersey">New Jersey</option>
+              <option value="New Mexico">New Mexico</option>
+              <option value="New York">New York</option>
+              <option value="North Carolina">North Carolina</option>
+              <option value="North Dakota">North Dakota</option>
+              <option value="Ohio">Ohio</option>
+              <option value="Oklahoma">Oklahoma</option>
+              <option value="Oregon">Oregon</option>
+              <option value="Pennsylvania">Pennsylvania</option>
+              <option value="Rhode Island">Rhode Island</option>
+              <option value="South Carolina">South Carolina</option>
+              <option value="South Dakota">South Dakota</option>
+              <option value="Tennessee">Tennessee</option>
+              <option value="Texas">Texas</option>
+              <option value="Utah">Utah</option>
+              <option value="Vermont">Vermont</option>
+              <option value="Virginia">Virginia</option>
+              <option value="Washington">Washington</option>
+              <option value="West Virginia">West Virginia</option>
+              <option value="Wisconsin">Wisconsin</option>
+              <option value="Wyoming">Wyoming</option>
+           </select>
+        </fieldset>
+        <fieldset><input placeholder="Your Zip Code" type="number" tabindex="6" required></fieldset>
+        <fieldset> <textarea placeholder="Type your Message Here...." tabindex="7" required></textarea></fieldset>
+        <fieldset><button name="submit" type="submit" id="contact-submit" data-submit="...Sending" onclick="validateForm()">Submit</button></fieldset>
+      </form>
     </div>
   </body>
-  
 </html>
