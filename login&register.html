@@ -8,10 +8,17 @@
 
   <body> 
      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">login And Regstration</li>
+        </ol>
+      </nav>
       <div class="hero">
           <div class="menu">
             <a href="index.html"><img src="images/rayyan.png" class="logo"></a>
           </div>
+
           <div class="form-box">
             <div class="button-box">
                 <div id="btn"></div>
@@ -44,6 +51,8 @@
 
       
 
+      
+
       <script>
           var x = document.getElementById("login");
           var y = document.getElementById("register");
@@ -61,15 +70,6 @@
           }
       </script>
 
-      <script>
-          $(document).ready(function(){
-            let form = document.getElementById('login');
-            document.getElementById('loginMessage').addEventListener('click', function(){
-            document.getElementById('loginMessage').textContent = "Hello " + document.getElementById('username').value;
-              login.style.display = "none";
-            });
-          });
-      </script>
           
   </body>
 </html>
