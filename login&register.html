@@ -23,12 +23,15 @@
                 <a href="https://twitter.com/?lang=fr" target="_blank"><img src="images/twitter.png"></a>
                 <a href="https://accounts.google.com/" target="_blank"><img src="images/google.png"></a>    
             </div>
+
             <form id="login" class="input-group">
-                <input type="text" class="input-field" placeholder="User Id" required>
-                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field"  id="username" placeholder="User Id" required>
+                <input type="text" class="input-field"   id="password"  placeholder="Enter Password" required>
                 <input type="checkbox" class="check-box"><span>Remember Password</span>
-                <button type="submit" class="submit-btn">Log in</button>
+                <button id="submitLogin" type="submit" class="submit-btn">Log in</button>
             </form>
+            <div id="loginMessage"></div>
+
             <form id ="register" class="input-group">
                 <input type="text" class="input-field" placeholder="User Id" required>
                 <input type="email" class="input-field" placeholder="Email Id" required>
@@ -57,5 +60,16 @@
               z.style.left="0";
           }
       </script>
+
+      <script>
+          $(document).ready(function(){
+            let form = document.getElementById('login');
+            document.getElementById('loginMessage').addEventListener('click', function(){
+            document.getElementById('loginMessage').textContent = "Hello " + document.getElementById('username').value;
+              login.style.display = "none";
+            });
+          });
+      </script>
+          
   </body>
 </html>

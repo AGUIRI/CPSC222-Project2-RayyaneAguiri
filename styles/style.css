@@ -1,5 +1,5 @@
 body {
-  background-color: #FFF0F5 !important;
+  background-color: #FFF0F5 ;
   font-family: sans-serif;
 }
 .top-nav-bar{
@@ -89,7 +89,6 @@ body {
     width:100%;
   }
 }
-
 .side-menu{
   height: 79%;
   width: 15%;
